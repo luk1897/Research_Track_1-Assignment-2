@@ -21,6 +21,10 @@ Then run on your shell: ```git clone https://github.com/luk1897/Research_Track_1
 
 Run this command on your shell: ```roslaunch my_assignment assignment_launcher.launcher```
 
+## Environment
+
+
+
 ## Nodes
 
 ### Planning Client
@@ -145,7 +149,7 @@ This function is used for getting distance from current goal and velocity averag
 
 #### Goal_cb
 
-```python
+```
 def goal_cb(pos):
 	global goal_x,goal_y
 
