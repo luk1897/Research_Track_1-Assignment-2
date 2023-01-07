@@ -1,6 +1,7 @@
 # Assignment-2
 
 ## Project Goal
+
 Given a simulation, create an action client which gives the user the possibility to decide the robot's goal and which takes information from the topic /odom.
 Create a service node that returns how many times the goal has been reached or cancelled.
 Create a node that takes the information taken from the first node and prints out the distance to goal and the average speed.
@@ -24,6 +25,8 @@ Run this command on your shell: ```roslaunch my_assignment assignment_launcher.l
 ## Environment
 
 ![environment rt1](https://user-images.githubusercontent.com/80416766/211173168-53474ace-d147-4405-bc21-82d217790b63.png)
+
+This is the entire environment in which I worked.
 
 ## Nodes
 
@@ -117,6 +120,10 @@ def position():
 
 The function is useful for getting goal coordinates.
 
+#### Output 
+
+![client_console](https://user-images.githubusercontent.com/80416766/211173202-07822132-67b0-4e38-8657-f566f7a6d977.png)
+
 ### Information
 
 This node a node takes the information taken from the first node and prints out the distance to goal and the average speed.
@@ -157,6 +164,10 @@ def goal_cb(pos):
 	goal_y=pos.goal.target_pose.pose.position.y	#y goal position
 ```
 This Function is useful for getting current goal.
+
+#### Output
+
+![info_console](https://user-images.githubusercontent.com/80416766/211173208-e70b2e37-eec2-4620-828d-3e0900c6ea8b.png)
 
 ## Pseudocode of planning_client (node a)
 
