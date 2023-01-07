@@ -9,7 +9,7 @@ Create a node that takes the information taken from the first node and prints ou
 ## IMPORTANT 
 
 I modified the launcher of the package assignment_2_2022 by adding ```launch-prefix="xterm"``` to the bug_as.py node to get info on the behaviour of the robot in another console. 
-I added ```launch-prefix="xterm"```, also in the launcher of the package my_assignment, to the information.py node to have a cleaner output
+I added ```launch-prefix="xterm"```, also in the launcher of the package my_assignment, to the information.py node to have a cleaner output.
 
 ## How to install and run
 
@@ -231,7 +231,9 @@ function main without parameters
 ```
 
 ##  Possibile improvements
-	
+*It would be more useful to have all the robot information in one console, but a solution would have to be found regarding the readability of the information itself, as there would be little order.
+
+*It might be useful to have the service node called up automatically after a predefined time so that it always shows the information about the achieved and deleted goals.
 	
 	
 	
