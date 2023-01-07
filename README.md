@@ -27,7 +27,7 @@ Run this command on your shell: ```roslaunch my_assignment assignment_launcher.l
 
 This node gives the user the possibility to decide the robot's goal and which takes information from the topic /odom.
 
-#### publish_function
+#### Publish_function
 
 ```python
 def publish_function(od):
@@ -49,4 +49,4 @@ def publish_function(od):
   
   This function for publish Posvel custom message (created with odometry information) on /posvel topic.
   
-  ### Menu
+  #### Menu
