@@ -111,4 +111,45 @@ def position():
 	return goal
 ```
 
-The function for getting goal coordinates.
+The function is useful for getting goal coordinates.
+
+### Information
+
+This node a node takes the information taken from the first node and prints out the distance to goal and the average speed.
+
+#### Posvel_cb
+
+``` python
+def posvel_cb(current):
+
+	global distance_x,distance_y,average_vel_x,average_vel_z,vel_x_list,vel_z_list
+	
+	dist_x=goal_x-current.x 
+	
+	dist_y=goal_y-current.y 
+	
+	distance_x=round(abs(dist_x),4)
+	
+	distance_y=round(abs(dist_y),4)
+	
+	vel_x_list.append(current.vel_x) 
+	
+	average_vel_x=sum(vel_x_list)/len(vel_x_list) 
+	
+	vel_z_list.append(current.vel_z) 
+	
+	average_vel_z=sum(vel_z_list)/len(vel_z_list)
+```
+
+This function is used for getting distance from current goal and velocity average.
+
+#### Goal_cb
+
+```python
+def goal_cb(pos):
+	global goal_x,goal_y
+
+	goal_x=pos.goal.target_pose.pose.position.x	#x goal position
+	goal_y=pos.goal.target_pose.pose.position.y	#y goal position
+```
+This Function is useful for getting current goal.
