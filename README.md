@@ -153,3 +153,68 @@ def goal_cb(pos):
 	goal_y=pos.goal.target_pose.pose.position.y	#y goal position
 ```
 This Function is useful for getting current goal.
+
+## Pseudocode of planning_client (node a)
+
+```python
+function position without parameters
+	print "Insert x value: "
+	get x coordinate from user
+	print "Insert y value: "
+	get y coordinate from user
+	print "Goal coordinates"
+	initialising goal to the message PlanningGoal
+	set the x goal coordinate
+	set the y goal coordinate
+	return the goal
+
+function menu with parameter client (PlanningAction)
+	printing the possible choices
+	print "Insert your choice: "
+	get the number which represents the choice of the user
+	if the choice is 1
+		call the function position which returns the goal
+		send the goal to the server
+		print "Goal sent!"
+	endif
+	else if the choice is 2
+		cancel the current goal
+		print "Goal cancelled!"
+	end else if
+	else if choice is 3
+		synchronizing with the serve
+		make request to the sevice node
+		return the value of the goal reached and cancelled counters
+	end else if
+	else if  choice is 4
+		print "Exiting"
+		exit from the process
+	end else if
+
+function publish_function with parameter od (Odometry message)
+	create publisher of the /posvel topic
+	initialising info to the message Posvel
+	set x coordinate of info to the current x position got from /odom topic
+	set y coordinate of info to the current y position got from /odom topic
+	set x velocity of info to the current x velocity got from /odom topic
+	set z velocity of info to the current z velocity got from /odom topic
+	send info to the /posvel topic
+
+function main without parameters
+	start the action client
+	call the subscriber of /odom topic
+	while ROS is not shutting down
+		synchronizing client and server
+		call the menu function
+```
+		
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
