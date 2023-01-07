@@ -50,3 +50,65 @@ def publish_function(od):
   This function for publish Posvel custom message (created with odometry information) on /posvel topic.
   
   #### Menu
+  
+  ```python
+  def menu(client):
+
+	print("MENU\n")
+	print("1. Choose your goal\n")
+	print("2. Cancel your goal\n")
+	print("3. Number of reached and cancelled goals\n")
+	print("4. Exit\n")
+	
+	print("Insert your choice: \n")
+	choice=int(input())
+	
+	if(choice == 1):
+		goal = position() #getting goal coordinates
+		client.send_goal(goal) #sending goal to the server
+		print("Goal sent!\n")
+		
+	elif(choice == 2):
+		client.cancel_goal() #cancelling goal
+		print("\nGoal cancelled!\n")
+		
+	elif(choice == 3):
+		rospy.wait_for_service('counter') #synchronizing with service node
+		
+		service=rospy.ServiceProxy('counter',Counter) #request to the service node
+		
+		counter=service("ok") # used a message "ok" to avoid any problem with empty message
+	
+	elif(choice == 4):
+		print("\nExiting!\n")
+		exit()
+```
+
+The function for choosing the goal, cancelling it and showing the number of reached and cancelled goals.
+
+#### Position
+
+``` python
+def position():
+	
+	print("Insert x value: " )
+	
+	x=float(input())
+	
+	print("Insert y value: " )
+	
+	y=float(input())
+	
+	print("\nGoal: (%s,%s) "%(x,y))
+	print("\n")
+	
+	goal=PlanningGoal()  #initialising goal to the message PlanningGoal
+	
+	goal.target_pose.pose.position.x=x #set the x goal position
+		
+	goal.target_pose.pose.position.y=y #set the y goal position
+	
+	return goal
+```
+
+The function for getting goal coordinates.
