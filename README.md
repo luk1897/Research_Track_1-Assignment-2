@@ -231,9 +231,9 @@ function main without parameters
 ```
 
 ##  Possibile improvements
-*It would be more useful to have all the robot information in one console, but a solution would have to be found regarding the readability of the information itself, as there would be little order.
+* It would be more useful to have all the robot information in one console, but a solution would have to be found regarding the readability of the information itself, as there would be little order.
 
-*It might be useful to have the service node called up automatically after a predefined time so that it always shows the information about the achieved and deleted goals.
+* It might be useful to have the service node called up automatically after a predefined time so that it always shows the information about the achieved and deleted goals.
 	
 	
 	
