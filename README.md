@@ -23,7 +23,7 @@ Run this command on your shell: ```roslaunch my_assignment assignment_launcher.l
 
 ## Environment
 
-
+![environment rt1](https://user-images.githubusercontent.com/80416766/211173168-53474ace-d147-4405-bc21-82d217790b63.png)
 
 ## Nodes
 
