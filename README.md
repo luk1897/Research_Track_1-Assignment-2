@@ -20,3 +20,33 @@ Then run on your shell: ```git clone https://github.com/luk1897/Research_Track_1
 ### Run
 
 Run this command on your shell: ```roslaunch my_assignment assignment_launcher.launcher```
+
+## Nodes
+
+### Planning Client
+
+This node gives the user the possibility to decide the robot's goal and which takes information from the topic /odom.
+
+#### publish_function
+
+```python
+def publish_function(od):
+
+	pub=rospy.Publisher('/posvel',Posvel,queue_size=10) # publisher on /posvel topic
+	
+	info=Posvel() 
+	
+	info.x=od.pose.pose.position.x
+	
+	info.y=od.pose.pose.position.y 
+	
+	info.vel_x=od.twist.twist.linear.x 
+	
+	info.vel_z=od.twist.twist.angular.z 
+	
+	pub.publish(info)
+  ```
+  
+  This function for publish Posvel custom message (created with odometry information) on /posvel topic.
+  
+  ### Menu
