@@ -13,6 +13,10 @@ It is necessary to have ROS. Follow the instructions from [wiki.ros.org](http://
 
 If you are using the professor's Docker Image, add the line ```source /opt/ros/noetic/setup.bash``` to the .bashrc file.
 
+You need to use Git. Run: ```sudo apt-get install git```
+
+Then run on your shell: ```git clone https://github.com/luk1897/Research_Track_1-Assignment-2```
+
 ### Run
 
 Run this command on your shell: ```roslaunch my_assignment assignment_launcher.launcher```
