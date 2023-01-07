@@ -11,7 +11,7 @@ Create a node that takes the information taken from the first node and prints ou
 
 It is necessary to have ROS. Follow the instructions from [wiki.ros.org](http://wiki.ros.org/).
 
-If you are using the professor's Docker Image, add the line source /opt/ros/noetic/setup.bash to the .bashrc file.
+If you are using the professor's Docker Image, add the line ```source /opt/ros/noetic/setup.bash``` to the .bashrc file.
 
 ### Run
 
