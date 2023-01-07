@@ -6,6 +6,11 @@ Given a simulation, create an action client which gives the user the possibility
 Create a service node that returns how many times the goal has been reached or cancelled.
 Create a node that takes the information taken from the first node and prints out the distance to goal and the average speed.
 
+## IMPORTANT 
+
+I modified the launcher of the package assignment_2_2022 by adding ```launch-prefix="xterm"``` to the bug_as.py node to get info on the behaviour of the robot in another console. 
+I added ```launch-prefix="xterm"```, also in the launcher of the package my_assignment, to the information.py node to have a cleaner output
+
 ## How to install and run
 
 ### Install
@@ -17,6 +22,8 @@ If you are using the professor's Docker Image, add the line ```source /opt/ros/n
 You need to use Git. Run: ```sudo apt-get install git```
 
 Then run on your shell: ```git clone https://github.com/luk1897/Research_Track_1-Assignment-2```
+
+Then install xterm. Run ```sudo apt-get install xterm```
 
 ### Run
 
@@ -171,7 +178,7 @@ This Function is useful for getting current goal.
 
 ## Pseudocode of planning_client (node a)
 
-```python
+```
 function position without parameters
 	print "Insert x value: "
 	get x coordinate from user
@@ -222,8 +229,8 @@ function main without parameters
 		synchronizing client and server
 		call the menu function
 ```
-		
-	
+
+##  Possibile improvements
 	
 	
 	
