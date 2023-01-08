@@ -3,7 +3,7 @@
 ## Project Goal
 
 Given a simulation, create an action client which gives the user the possibility to decide the robot's goal and which takes information from the topic /odom.
-Create a service node that returns how many times the goal has been reached or cancelled.
+Create a service node that returns how many times goals have been reached or cancelled.
 Create a node that takes the information taken from the first node and prints out the distance to goal and the average speed.
 
 ## IMPORTANT 
@@ -130,6 +130,33 @@ The function is useful for getting goal coordinates.
 #### Output 
 
 ![client_console](https://user-images.githubusercontent.com/80416766/211173202-07822132-67b0-4e38-8657-f566f7a6d977.png)
+
+### Counter
+
+This is a service node that returns how many times goals have been reached or cancelled.
+
+#### Res_cb
+
+``` python
+def res_cb(res):
+
+	global reach_counter, cancel_counter
+	
+	if(res.status.status==3):
+		reach_counter+=1
+	elif(res.status.status==2):
+		cancel_counter+=1
+``` 
+This function is used for computing how many goals are reached or cancelled.
+
+#### Count_printer
+
+``` python
+def count_printer(string):
+
+	return CounterResponse(reach_counter,cancel_counter) #
+```
+This function is useful for sending the response.
 
 ### Information
 
