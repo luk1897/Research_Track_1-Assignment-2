@@ -165,7 +165,7 @@ This function is useful for sending the response.
 
 ### INFORMATION NODE
 
-This node a node takes the information taken from the first node and prints out the distance to goal and the average speed wiht a rate of 1 Hz, this frequence is param passed to this node through the launcher.
+This node a node takes the information taken from the first node and prints out the distance to goal and the average speed wiht a rate of 1 Hz, this frequence is parameter passed to this node through the launcher.
 
 #### Posvel_cb
 
