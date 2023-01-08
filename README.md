@@ -37,7 +37,7 @@ This is the entire environment in which I worked.
 
 ## Nodes
 
-### Planning Client
+### PLANNING CLIENT NODE
 
 This node gives the user the possibility to decide the robot's goal and which takes information from the topic /odom.
 
@@ -131,7 +131,7 @@ The function is useful for getting goal coordinates.
 
 ![client_console](https://user-images.githubusercontent.com/80416766/211173202-07822132-67b0-4e38-8657-f566f7a6d977.png)
 
-### Counter
+### COUNTER NODE
 
 This is a service node that returns how many times goals have been reached or cancelled.
 
@@ -158,7 +158,7 @@ def count_printer(string):
 ```
 This function is useful for sending the response.
 
-### Information
+### INFORMATION NODE
 
 This node a node takes the information taken from the first node and prints out the distance to goal and the average speed.
 
