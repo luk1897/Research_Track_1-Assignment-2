@@ -158,6 +158,11 @@ def count_printer(string):
 ```
 This function is useful for sending the response.
 
+#### Output
+
+![service_console](https://user-images.githubusercontent.com/80416766/211222756-76957959-6b36-47a7-b584-08780695b37c.png)
+
+
 ### INFORMATION NODE
 
 This node a node takes the information taken from the first node and prints out the distance to goal and the average speed.
@@ -190,7 +195,7 @@ This function is used for getting distance from current goal and velocity averag
 
 #### Goal_cb
 
-```
+```python
 def goal_cb(pos):
 	global goal_x,goal_y
 
@@ -256,6 +261,10 @@ function main without parameters
 		synchronizing client and server
 		call the menu function
 ```
+## Outline of the assignment and the whole environment
+
+![rqtgraph](https://user-images.githubusercontent.com/80416766/211222771-edae7f33-7661-455a-8ad2-a92a4c41639c.png)
+
 
 ##  Possibile improvements
 * It would be more useful to have all the robot information in one console, but a solution would have to be found regarding the readability of the information itself, as there would be little order.
