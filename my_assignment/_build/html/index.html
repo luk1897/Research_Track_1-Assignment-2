@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Welcome to My assignment’s documentation! &mdash; My assignment 1.0 documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="_static/graphviz.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/sphinx_highlight.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="#" class="icon icon-home">
+            My assignment
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">Welcome to My assignment’s documentation!</a></li>
+<li><a class="reference internal" href="#indices-and-tables">Indices and tables</a></li>
+<li><a class="reference internal" href="#module-scripts.planning_client">Planning client Module</a><ul>
+<li><a class="reference internal" href="#scripts.planning_client.main"><code class="docutils literal notranslate"><span class="pre">main()</span></code></a></li>
+<li><a class="reference internal" href="#scripts.planning_client.menu"><code class="docutils literal notranslate"><span class="pre">menu()</span></code></a></li>
+<li><a class="reference internal" href="#scripts.planning_client.position"><code class="docutils literal notranslate"><span class="pre">position()</span></code></a></li>
+<li><a class="reference internal" href="#scripts.planning_client.publish_function"><code class="docutils literal notranslate"><span class="pre">publish_function()</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#module-scripts.counter">Counter Module</a><ul>
+<li><a class="reference internal" href="#scripts.counter.cancel_counter"><code class="docutils literal notranslate"><span class="pre">cancel_counter</span></code></a></li>
+<li><a class="reference internal" href="#scripts.counter.count_printer"><code class="docutils literal notranslate"><span class="pre">count_printer()</span></code></a></li>
+<li><a class="reference internal" href="#scripts.counter.main"><code class="docutils literal notranslate"><span class="pre">main()</span></code></a></li>
+<li><a class="reference internal" href="#scripts.counter.reach_counter"><code class="docutils literal notranslate"><span class="pre">reach_counter</span></code></a></li>
+<li><a class="reference internal" href="#scripts.counter.res_cb"><code class="docutils literal notranslate"><span class="pre">res_cb()</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#module-scripts.information">Information Module</a><ul>
+<li><a class="reference internal" href="#scripts.information.average_vel_x"><code class="docutils literal notranslate"><span class="pre">average_vel_x</span></code></a></li>
+<li><a class="reference internal" href="#scripts.information.average_vel_z"><code class="docutils literal notranslate"><span class="pre">average_vel_z</span></code></a></li>
+<li><a class="reference internal" href="#scripts.information.distance_x"><code class="docutils literal notranslate"><span class="pre">distance_x</span></code></a></li>
+<li><a class="reference internal" href="#scripts.information.distance_y"><code class="docutils literal notranslate"><span class="pre">distance_y</span></code></a></li>
+<li><a class="reference internal" href="#scripts.information.goal_cb"><code class="docutils literal notranslate"><span class="pre">goal_cb()</span></code></a></li>
+<li><a class="reference internal" href="#scripts.information.goal_x"><code class="docutils literal notranslate"><span class="pre">goal_x</span></code></a></li>
+<li><a class="reference internal" href="#scripts.information.goal_y"><code class="docutils literal notranslate"><span class="pre">goal_y</span></code></a></li>
+<li><a class="reference internal" href="#scripts.information.main"><code class="docutils literal notranslate"><span class="pre">main()</span></code></a></li>
+<li><a class="reference internal" href="#scripts.information.posvel_cb"><code class="docutils literal notranslate"><span class="pre">posvel_cb()</span></code></a></li>
+<li><a class="reference internal" href="#scripts.information.vel_x_list"><code class="docutils literal notranslate"><span class="pre">vel_x_list</span></code></a></li>
+<li><a class="reference internal" href="#scripts.information.vel_z_list"><code class="docutils literal notranslate"><span class="pre">vel_z_list</span></code></a></li>
+</ul>
+</li>
+</ul>
+</div>
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="#">My assignment</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="#" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Welcome to My assignment’s documentation!</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/index.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <div class="section" id="welcome-to-my-assignment-s-documentation">
+<h1>Welcome to My assignment’s documentation!<a class="headerlink" href="#welcome-to-my-assignment-s-documentation" title="Permalink to this heading"></a></h1>
+<div class="toctree-wrapper compound">
+</div>
+</div>
+<div class="section" id="indices-and-tables">
+<h1>Indices and tables<a class="headerlink" href="#indices-and-tables" title="Permalink to this heading"></a></h1>
+<ul class="simple">
+<li><p><a class="reference internal" href="genindex.html"><span class="std std-ref">Index</span></a></p></li>
+<li><p><a class="reference internal" href="py-modindex.html"><span class="std std-ref">Module Index</span></a></p></li>
+<li><p><a class="reference internal" href="search.html"><span class="std std-ref">Search Page</span></a></p></li>
+</ul>
+</div>
+<div class="section" id="module-scripts.planning_client">
+<span id="planning-client-module"></span><h1>Planning client Module<a class="headerlink" href="#module-scripts.planning_client" title="Permalink to this heading"></a></h1>
+<p>This ROS node is used for sending and cancelling the goal using <strong>/reaching_goal</strong>, for requesting the total number of reached and cancelled goals through the <strong>/counter</strong> service and for publishing informations, received by the <strong>/odom</strong> topic, to the <strong>/posvel</strong> topic.</p>
+<dl>
+<dt>Subscribes to:</dt><dd><p><strong>/odom</strong></p>
+</dd>
+<dt>Publishes to:</dt><dd><p><strong>/posvel</strong></p>
+</dd>
+<dt>Service:</dt><dd><p><strong>/counter</strong></p>
+</dd>
+<dt>Action:</dt><dd><p><strong>/reaching_goal/goal</strong></p>
+<p><strong>/reaching_goal/cancel</strong></p>
+</dd>
+</dl>
+<dl class="py function">
+<dt class="sig sig-object py" id="scripts.planning_client.main">
+<span class="sig-prename descclassname"><span class="pre">scripts.planning_client.</span></span><span class="sig-name descname"><span class="pre">main</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/scripts/planning_client.html#main"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#scripts.planning_client.main" title="Permalink to this definition"></a></dt>
+<dd><p>Function used for starting the action client, for subscribing to <strong>/odom</strong> topic,
+for synchronizing client and server of the <strong>/counter</strong> service and for calling the
+menu function.</p>
+<p>No Args.</p>
+<p>No Returns.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="scripts.planning_client.menu">
+<span class="sig-prename descclassname"><span class="pre">scripts.planning_client.</span></span><span class="sig-name descname"><span class="pre">menu</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">client</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/scripts/planning_client.html#menu"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#scripts.planning_client.menu" title="Permalink to this definition"></a></dt>
+<dd><p>Function for choosing the goal, cancelling it and
+showing the number of reached and cancelled goals.</p>
+<p>Args:
+client(PlanningAction): action client.</p>
+<p>No Returns.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="scripts.planning_client.position">
+<span class="sig-prename descclassname"><span class="pre">scripts.planning_client.</span></span><span class="sig-name descname"><span class="pre">position</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/scripts/planning_client.html#position"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#scripts.planning_client.position" title="Permalink to this definition"></a></dt>
+<dd><p>Function for getting goal coordinates.</p>
+<p>No Args.</p>
+<p>Returns:
+goal(PlanningGoal): the robot’s goal.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="scripts.planning_client.publish_function">
+<span class="sig-prename descclassname"><span class="pre">scripts.planning_client.</span></span><span class="sig-name descname"><span class="pre">publish_function</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">od</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/scripts/planning_client.html#publish_function"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#scripts.planning_client.publish_function" title="Permalink to this definition"></a></dt>
+<dd><p>Function for publish Posvel custom message (created with odometry information)
+on <strong>/posvel</strong> topic.</p>
+<p>Args:
+od(Odometry): odometry message.</p>
+<p>No Returns.</p>
+</dd></dl>
+
+</div>
+<div class="section" id="module-scripts.counter">
+<span id="counter-module"></span><h1>Counter Module<a class="headerlink" href="#module-scripts.counter" title="Permalink to this heading"></a></h1>
+<p>This ROS node is used for computing the total of reached and cancelled goals using the info received from the <strong>/reaching_goal/result</strong> and for sending them to a client through the <strong>/counter</strong> service.</p>
+<dl class="simple">
+<dt>Subscribes to:</dt><dd><p><strong>/reaching_goal/result</strong></p>
+</dd>
+<dt>Services:</dt><dd><p><strong>/counter</strong></p>
+</dd>
+</dl>
+<dl class="py data">
+<dt class="sig sig-object py" id="scripts.counter.cancel_counter">
+<span class="sig-prename descclassname"><span class="pre">scripts.counter.</span></span><span class="sig-name descname"><span class="pre">cancel_counter</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="headerlink" href="#scripts.counter.cancel_counter" title="Permalink to this definition"></a></dt>
+<dd><p>global variable for counting cancelled goals.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="scripts.counter.count_printer">
+<span class="sig-prename descclassname"><span class="pre">scripts.counter.</span></span><span class="sig-name descname"><span class="pre">count_printer</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">string</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/scripts/counter.html#count_printer"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#scripts.counter.count_printer" title="Permalink to this definition"></a></dt>
+<dd><p>Function for sending the response.</p>
+<p>Args:
+string (string): request from client.</p>
+<p>Returns:
+CounterResponse(integer): total number of reached and cancelled goals.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="scripts.counter.main">
+<span class="sig-prename descclassname"><span class="pre">scripts.counter.</span></span><span class="sig-name descname"><span class="pre">main</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/scripts/counter.html#main"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#scripts.counter.main" title="Permalink to this definition"></a></dt>
+<dd><p>Function used for starting the node, for subscribing to <strong>/reaching_goal/result</strong>
+and for the <strong>/counter</strong> service.</p>
+<p>No Args.</p>
+<p>No Returns.</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="scripts.counter.reach_counter">
+<span class="sig-prename descclassname"><span class="pre">scripts.counter.</span></span><span class="sig-name descname"><span class="pre">reach_counter</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="headerlink" href="#scripts.counter.reach_counter" title="Permalink to this definition"></a></dt>
+<dd><p>global variable for counting reached goals.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="scripts.counter.res_cb">
+<span class="sig-prename descclassname"><span class="pre">scripts.counter.</span></span><span class="sig-name descname"><span class="pre">res_cb</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">res</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/scripts/counter.html#res_cb"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#scripts.counter.res_cb" title="Permalink to this definition"></a></dt>
+<dd><p>Function for compute how many goals are reached or cancelled.</p>
+<p>Args:
+res (PlanningActionResult): results regarding goals.</p>
+<p>No Returns.</p>
+</dd></dl>
+
+</div>
+<div class="section" id="module-scripts.information">
+<span id="information-module"></span><h1>Information Module<a class="headerlink" href="#module-scripts.information" title="Permalink to this heading"></a></h1>
+<p>This ROS node is used for printing the current goal distance and the average of x and z velocities. The current goal is obtained from <strong>/reaching_goal/goal</strong>, then the current goal distance is computed by the difference between the current goal and the current position, received from <strong>/posvel</strong> topic.
+The current x and z velocities are obtained from <strong>/posvel</strong> topic, then an average of these velocities is done.</p>
+<dl>
+<dt>Subscribes to:</dt><dd><p><strong>/reaching_goal/goal</strong></p>
+<p><strong>/posvel</strong></p>
+</dd>
+</dl>
+<dl class="py data">
+<dt class="sig sig-object py" id="scripts.information.average_vel_x">
+<span class="sig-prename descclassname"><span class="pre">scripts.information.</span></span><span class="sig-name descname"><span class="pre">average_vel_x</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0.0</span></em><a class="headerlink" href="#scripts.information.average_vel_x" title="Permalink to this definition"></a></dt>
+<dd><p>global variable used for average x velocity.</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="scripts.information.average_vel_z">
+<span class="sig-prename descclassname"><span class="pre">scripts.information.</span></span><span class="sig-name descname"><span class="pre">average_vel_z</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0.0</span></em><a class="headerlink" href="#scripts.information.average_vel_z" title="Permalink to this definition"></a></dt>
+<dd><p>global variable used for average z velocity.</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="scripts.information.distance_x">
+<span class="sig-prename descclassname"><span class="pre">scripts.information.</span></span><span class="sig-name descname"><span class="pre">distance_x</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0.0</span></em><a class="headerlink" href="#scripts.information.distance_x" title="Permalink to this definition"></a></dt>
+<dd><p>global variable for x goal distance.</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="scripts.information.distance_y">
+<span class="sig-prename descclassname"><span class="pre">scripts.information.</span></span><span class="sig-name descname"><span class="pre">distance_y</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0.0</span></em><a class="headerlink" href="#scripts.information.distance_y" title="Permalink to this definition"></a></dt>
+<dd><p>global variable for y goal distance.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="scripts.information.goal_cb">
+<span class="sig-prename descclassname"><span class="pre">scripts.information.</span></span><span class="sig-name descname"><span class="pre">goal_cb</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pos</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/scripts/information.html#goal_cb"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#scripts.information.goal_cb" title="Permalink to this definition"></a></dt>
+<dd><p>Function for getting current goal.</p>
+<p>Args:
+pos(PlanningActionGoal): current goal position.</p>
+<p>No Returns.</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="scripts.information.goal_x">
+<span class="sig-prename descclassname"><span class="pre">scripts.information.</span></span><span class="sig-name descname"><span class="pre">goal_x</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0.0</span></em><a class="headerlink" href="#scripts.information.goal_x" title="Permalink to this definition"></a></dt>
+<dd><p>global variable for x goal position.</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="scripts.information.goal_y">
+<span class="sig-prename descclassname"><span class="pre">scripts.information.</span></span><span class="sig-name descname"><span class="pre">goal_y</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0.0</span></em><a class="headerlink" href="#scripts.information.goal_y" title="Permalink to this definition"></a></dt>
+<dd><p>global variable for y goal position.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="scripts.information.main">
+<span class="sig-prename descclassname"><span class="pre">scripts.information.</span></span><span class="sig-name descname"><span class="pre">main</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/scripts/information.html#main"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#scripts.information.main" title="Permalink to this definition"></a></dt>
+<dd><p>Function used for subscribing to <strong>/posvel</strong> and /reaching_goal/goal and
+for printing average velocities and current goal distance with a frequency obtained
+as parameter.</p>
+<p>No Args.</p>
+<p>No Returns.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="scripts.information.posvel_cb">
+<span class="sig-prename descclassname"><span class="pre">scripts.information.</span></span><span class="sig-name descname"><span class="pre">posvel_cb</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">current</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/scripts/information.html#posvel_cb"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#scripts.information.posvel_cb" title="Permalink to this definition"></a></dt>
+<dd><p>Function for getting distance from current goal and velocity average.</p>
+<p>Args:
+current(Posvel): current robot’s position and its x and z velocities.</p>
+<p>No Returns.</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="scripts.information.vel_x_list">
+<span class="sig-prename descclassname"><span class="pre">scripts.information.</span></span><span class="sig-name descname"><span class="pre">vel_x_list</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[]</span></em><a class="headerlink" href="#scripts.information.vel_x_list" title="Permalink to this definition"></a></dt>
+<dd><p>global variable used for computing the average of x velocity.</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="scripts.information.vel_z_list">
+<span class="sig-prename descclassname"><span class="pre">scripts.information.</span></span><span class="sig-name descname"><span class="pre">vel_z_list</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[]</span></em><a class="headerlink" href="#scripts.information.vel_z_list" title="Permalink to this definition"></a></dt>
+<dd><p>global variable used for computing the average of z velocity.</p>
+</dd></dl>
+
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023, Luca Petruzzello.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

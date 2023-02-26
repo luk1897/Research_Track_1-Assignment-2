@@ -1,0 +1,4 @@
+string s
+---
+uint32 total_reach
+uint32 total_cancel
