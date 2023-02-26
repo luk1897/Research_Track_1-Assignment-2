@@ -13,7 +13,7 @@ I added ```launch-prefix="xterm"```, also in the launcher of the package my_assi
 
 ## Documentation
 
-[Here] (https://luk1897.github.io/Research_Track_1-Assignment-2/) it is possible to read the documentation regarding the project.
+[Here](https://luk1897.github.io/Research_Track_1-Assignment-2/) it is possible to read the documentation regarding the project.
 
 ## How to install and run
 
