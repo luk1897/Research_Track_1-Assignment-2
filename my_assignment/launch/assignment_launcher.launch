@@ -2,7 +2,7 @@
 <launch>
 
 	<include file="$(find assignment_2_2022)/launch/assignment1.launch" />
-	<node pkg="my_assignment" type="planning_client.py" name="planning_client" required="true" output="screen" />
+	
 	<node pkg="my_assignment" type="counter.py" name="counter" required="true" output="screen" />
 	<node pkg="my_assignment" type="information.py" name="information"  required="true" output="screen" launch-prefix="xterm -e"/>
 	<param name="frequency" type="double" value="1"/>
