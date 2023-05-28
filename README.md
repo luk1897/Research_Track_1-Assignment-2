@@ -1,15 +1,19 @@
 # Assignment-2
 
+## IMPORTANT 
+
+I modified the launcher of the package assignment_2_2022 by adding ```launch-prefix="xterm"``` to the bug_as.py node to get info on the behaviour of the robot in another console. 
+I added ```launch-prefix="xterm"```, also in the launcher of the package my_assignment, to the information.py node to have a cleaner output.
+
+I have modified the launcher in such a way that the planning_client node does not start, as the features of this node have been reproduced by the Buttons notebook. In addition, I added another notebook that plots the current position of the robot and the goal to be reached, the laser scan and the reached and unreached goals.
+
+
+
 ## Project Goal
 
 Given a simulation, create an action client which gives the user the possibility to decide the robot's goal and which takes information from the topic /odom.
 Create a service node that returns how many times goals have been reached or cancelled.
 Create a node that takes the information taken from the first node and prints out the distance to goal and the average speed.
-
-## IMPORTANT 
-
-I modified the launcher of the package assignment_2_2022 by adding ```launch-prefix="xterm"``` to the bug_as.py node to get info on the behaviour of the robot in another console. 
-I added ```launch-prefix="xterm"```, also in the launcher of the package my_assignment, to the information.py node to have a cleaner output.
 
 ## Documentation
 
